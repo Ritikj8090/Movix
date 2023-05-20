@@ -6,6 +6,7 @@ import Img from "../../../components/lazyLoadimage/Img";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 
 import "./style.scss";
+import SearchResult from "../../searchResult/SearchResult";
 
 const HeroBanner = () => {
   const [backgound, setBackgound] = useState("");
@@ -49,7 +50,6 @@ const HeroBanner = () => {
               onKeyUp={searchQueryHandler}
               onChange={(event) => setQuery(event.target.value)}
             />
-            <button>Search</button>
           </div>
         </div>
       </ContentWrapper>
